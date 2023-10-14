@@ -1,0 +1,48 @@
+# Note that if the config does not contain all comments, this
+# simply means that it was updated by the plugin! To get them
+# back, simply view or regenerate the default config!
+# ~ayunami2000
+# Bot token
+token: ""
+# HTTP proxy (leave blank to disable)
+proxy: ""
+# Chat channel
+chat:
+  # Should we have a channel for linking server and discord chat?
+  enabled: true
+  # Channel ID
+  id: ""
+  # Should we show the discord user's discriminated name or nickname?
+  nick: false
+  # Filter mode
+  # 0 - Default -- Escapes all discord formatting characters.
+  # 1 - Code Block -- Only escapes the last of triple backticks.
+  # 2 - None -- Not recommended. Does not filter in-game --> discord messages.
+  filter: 0
+  # Commands
+  commands:
+    # Should we use commands?
+    enabled: true
+    # Command prefix
+    prefix: "!"
+    # Command Aliases
+    aliases:
+      # Lists online players.
+      list:
+        - "list"
+        - "lsit"
+        - "l"
+        - "online"
+        - "who"
+# Console channel
+console:
+  # Should we have a channel for sending console commands from discord?
+  enabled: false
+  # Log mirroring
+  logs:
+    # Should we mirror the logs as well?
+    enabled: true
+    # Should the logs use Discord's ANSI colors?
+    ansi: true
+  # Channel ID
+  id: ""
